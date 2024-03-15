@@ -14,7 +14,7 @@ main{
   padding: 20px;
   color:#fff;
   /* background-color: rgb(52, 52, 52); */
-  background-image: linear-gradient(to right, #010c1b, #124485,#1d61ba,#1469d7, #0081CF,#0089BA,#008E9B,#008F7A);
+  background-image: linear-gradient(to right, #000a17, #124485,#1d61ba,#1469d7, #0081CF,#0089BA,#008E9B,#008F7A);
 }
 
 .sidebar{
@@ -32,13 +32,17 @@ main{
 }
 
 .logoimg {
-  width: 120px;
+  width: 125px;
 }
 
 .logo{
   font-size: 40px;
   font-family: cheque;
   color: #fff;
+}
+
+.logo.active{
+  background-color: #000;
 }
 
 .bars{
@@ -48,7 +52,10 @@ main{
   cursor: pointer;
 }
 .bars:hover{
-  color: rgb(166, 255, 0);
+  /* color: rgb(166, 255, 0); */
+  color: #f7ff61;
+  ;
+
 }
 
 .link {
@@ -61,15 +68,21 @@ main{
 
 .link:hover {
   background: rgb(52, 52, 52);
-  color: rgb(166, 255, 0);
+  /* color: rgb(166, 255, 0); */
+  color: #f7ff61;
   transition: all 0.5s;
 }
 
 .active{
   background: rgb(52, 52, 52);
-  color: #fff;
+  color: #f7ff61;
+  /* color: rgb(166, 255, 0); */
 }
 
-.icon, .link_text {
+.icon {
+  font-size: 25px;
+}
+.link_text {
   font-size: 20px;
+  font-weight: 600;
 }
