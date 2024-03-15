@@ -1,17 +1,22 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Sidebar from './components/Sidebar';
-import Dashboard from './pages/Dashboard';
-import Trending from './pages/Trending';
-import Player from './pages/Player';
-import Favourites from './pages/Favourites';
-import Library from './pages/Library';
+import Dashboard from './user/Dashboard';
+import Trending from './user/Trending';
+import Player from './user/Player';
+import Favourites from './user/Favourites';
+import Library from './user/Library';
+import NavBar from './welcome/NavBar';
 
 function App() {
     return (
         <div id='app'>
 
             <BrowserRouter>
+
+                {/* <NavBar /> */}
+
+
                 <Sidebar >
                   <Routes>
 
