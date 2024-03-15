@@ -27,6 +27,7 @@
     padding: 50px;
     height: 100vh;
     /* background-color: rgb(57, 57, 57); */
+    background-image: linear-gradient(to right, rgb(223, 92, 252) , rgb(105, 234, 251));
     
  }
   

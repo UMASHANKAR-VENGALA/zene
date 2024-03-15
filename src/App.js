@@ -14,10 +14,10 @@ function App() {
 
             <BrowserRouter>
 
-                {/* <NavBar /> */}
+                <NavBar />
 
 
-                <Sidebar >
+                {/* <Sidebar >
                   <Routes>
 
                     <Route path="/" element={<Dashboard/>} />
@@ -28,7 +28,7 @@ function App() {
                     <Route path="/library" element={<Library/>} />
 
                   </Routes>
-                </Sidebar>
+                </Sidebar> */}
             </BrowserRouter>
 
         </div>
