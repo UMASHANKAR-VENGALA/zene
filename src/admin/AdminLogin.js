@@ -43,7 +43,9 @@ export default function AdminLogin()
 
   return (
     <div>
+      <br/><br/>
       <h3 align="center"><u>Admin Login</u></h3>
+      <br/><br/>
       {
         message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
       }

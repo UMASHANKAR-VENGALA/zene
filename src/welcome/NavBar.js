@@ -3,10 +3,11 @@ import {  Link, Route, Routes } from 'react-router-dom';
 import logo from "./LOGO.png"
 import Register from './Register';
 import SignIn from './SignIn';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Home from './Home';
 import DashBoard from '../user/Dashboard';
 import AdminLogin from './../admin/AdminLogin';
+import './SignIn.css'
 
 
 export default function NavBar() {
@@ -21,13 +22,13 @@ export default function NavBar() {
                      </Link>
                   <div className="navbar__links">
                      <Link to='/signin'>
-                     <Button>UserSignin</Button>
+                     <button class="button-64" role="button"><span class="text">Sign IN</span></button>
                      </Link>
                      <Link to='/register'>
-                     <Button>UserRegister</Button>
+                     <button class="button-64" role="button"><span class="text">Register</span></button>
                      </Link>
                      <Link to='/Adminlogin'>
-                      <Button>AdminSignin</Button>
+                     <button class="button-64" role="button"><span class="text">Admin SignIn</span></button>
                      </Link>
                   </div>
                   
