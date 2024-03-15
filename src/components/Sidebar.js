@@ -43,8 +43,7 @@ export default function Sidebar({children}) {
 
   return (
     <div className="container" >
-        <div className="navbar"></div>
-        <div style={{width: isOpen ? "300px" : "85px"}} className="sidebar">
+        <div style={{width: isOpen ? "280px" : "85px"}} className="sidebar">
             <div className="top_section">
                 <NavLink to="/" style={{display: isOpen ? "block" : "none"}} className='logo'>
                     <img src='LOGO.png' alt='logo' className='logoimg' />

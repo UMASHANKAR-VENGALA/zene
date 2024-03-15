@@ -7,21 +7,22 @@
 
 .container {
   display: flex;
+  
 }
 
 main{
   width: 100%;
   padding: 20px;
-  color:#fff;
-  /* background-color: rgb(52, 52, 52); */
-  background-image: linear-gradient(to right, #000a17, #124485,#1d61ba,#1469d7, #0081CF,#0089BA,#008E9B,#008F7A);
+  color:#71ff04;
+  background-color: rgb(52, 52, 52);
+  /* background-image: linear-gradient(to right, #000000, #124485,#1d61ba,#1469d7, #0081CF,#0089BA,#008E9B,#008F7A); */
 }
 
 .sidebar{
   background: #000;
   color: #fff;
   height: 100vh;
-  width: 300px;
+  /* width: 280px; */
 }
 
 .top_section {
@@ -53,7 +54,8 @@ main{
 }
 .bars:hover{
   /* color: rgb(166, 255, 0); */
-  color: #f7ff61;
+  color:#71ff04; 
+   /* #f7ff61; */
   ;
 
 }
@@ -69,13 +71,15 @@ main{
 .link:hover {
   background: rgb(52, 52, 52);
   /* color: rgb(166, 255, 0); */
-  color: #f7ff61;
+  /* color: #f7ff61; */
+  color: #71ff04;
   transition: all 0.5s;
 }
 
 .active{
-  background: rgb(52, 52, 52);
-  color: #f7ff61;
+  /* background: rgb(52, 52, 52); */
+  /* color: #f7ff61; */
+  color: #71ff04;
   /* color: rgb(166, 255, 0); */
 }
 

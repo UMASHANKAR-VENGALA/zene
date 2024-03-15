@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Player() {
   return (
-    <div>Player</div>
+    <div>
+      <h1 align="center">Music Player</h1>
+    </div>
   )
 }

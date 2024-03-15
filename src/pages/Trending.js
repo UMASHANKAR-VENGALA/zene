@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Trending() {
   return (
-    <div>Trending</div>
+    <div>
+      <h1 align="center">Trenging Songs</h1>
+    </div>
   )
 }
