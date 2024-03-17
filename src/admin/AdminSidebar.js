@@ -1,7 +1,7 @@
 import { MdDashboard, MdLibraryMusic } from 'react-icons/md'
 import { BsFire, BsFillMusicPlayerFill } from "react-icons/bs";
 import { TbMusicHeart } from "react-icons/tb";
-import { FaBars } from "react-icons/fa";
+import { FaBars,FaUserAlt } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -15,7 +15,7 @@ export default function Sidebar({children}) {
 
     const menuItem = [
         {
-            path:"/",
+            path:"/dashboard",
             name:"Dashboard",
             icon:<MdDashboard />
         },
@@ -39,13 +39,18 @@ export default function Sidebar({children}) {
             name:"Library",
             icon:<MdLibraryMusic />
         },
+        {
+            path:"/viewusers",
+            name:"View Users",
+            icon:<FaUserAlt />
+        }
     ]
 
   return (
     <div className="container" >
         <div style={{width: isOpen ? "280px" : "85px"}} className="sidebar">
             <div className="top_section">
-                <NavLink to="/" style={{display: isOpen ? "block" : "none"}} className='logo'>
+                <NavLink to="/dashboard" style={{display: isOpen ? "block" : "none"}} className='logo'>
                     <img src='LOGO.png' alt='logo' className='logoimg' />
                     {/* ZENE */}
                 </NavLink>

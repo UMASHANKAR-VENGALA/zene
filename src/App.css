@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:opsz@12..72&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -15,6 +17,10 @@ main{
   padding: 20px;
   color:#71ff04;
   background-color: rgb(52, 52, 52);
+  font-family: "Texturina", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   /* background-image: linear-gradient(to right, #000000, #124485,#1d61ba,#1469d7, #0081CF,#0089BA,#008E9B,#008F7A); */
 }
 
@@ -22,6 +28,10 @@ main{
   background: #000;
   color: #fff;
   height: 100vh;
+  font-family: "Texturina", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   /* width: 280px; */
 }
 
@@ -63,7 +73,7 @@ main{
 .link {
   display: flex;
   color: #fff;
-  padding: 25px 35px;
+  padding: 20px 35px;
   gap: 30px;
   transition: all 0.5s;
 }

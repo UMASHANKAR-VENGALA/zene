@@ -1,9 +1,10 @@
 import React from 'react'
+import Sidebar from './UserSidebar';
 
 export default function DashBorad() {
   return (
-    <div>
+    <Sidebar>
       <h2>Hello guys</h2>
-    </div>
+    </Sidebar>
   )
 }

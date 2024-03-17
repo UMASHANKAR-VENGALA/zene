@@ -3,16 +3,28 @@ form {
   margin: auto;
   width: 300px;
   text-align: center; 
-  border: 2px solid black;
-  padding: 20px;
+  border: 2px solid white;
+  box-shadow: 5px 5px 5px lightblue;
+  padding: 28px;
+  margin-top: 80px;
   margin: 50%vw;
   border-radius: 12px;
+  color: #FFFFFF;
+  /* background-image: linear-gradient(to right,rgb(105, 234, 251),rgb(223, 92, 252)); */
+}
+body {
+  text-align: center;
+  /* padding: 50px; */
+  height: 100vh;
+  /* background-color: rgb(57, 57, 57); */
+  background-image: linear-gradient(to right, rgb(223, 92, 252) , rgb(105, 234, 251));
+  
 }
 
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: bold;
   text-align: center; 
 }
@@ -31,6 +43,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 
 button[type='submit'] {
   background-color: black;
@@ -66,7 +79,7 @@ button[type='submit']:hover {
   /* line-height: 1em; */
   max-width: 100%;
   min-width: 140px;
-  padding: 3px;
+  padding: 3px ;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;

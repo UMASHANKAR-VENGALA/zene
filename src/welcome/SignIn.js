@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import TextField from '@mui/material/TextField';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import "./SignIn.css"
@@ -27,8 +28,8 @@ export default function SignIn()
       const response = await axios.post('http://localhost:2032/checkuserlogin', formData);
       if (response.data!=null) 
       {
-        console.log(response.data)
-        navigate("/dashboard");
+              console.log(response.data)
+              navigate("/dashboard");        
       } 
       else 
       {
@@ -45,22 +46,28 @@ export default function SignIn()
 
   return (
     <div>
-      <br/><br/>
-      <h2 align="center"><u>Sign In</u></h2>
-      <br/><br/>
+      
+      
       {
         message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
       }
       <form onSubmit={handleSubmit}>
+
+      <h2 align="center" style={{fontFamily:"cursive",fontSize:"40px"}}><u>Sign In</u></h2>
+      <br/><br/>
         <div>
           <label>Email</label>
-          <input type="email" id="email" value={formData.email} onChange={handleChange} placeholder='Email' required />
+          <input type="email" id="email" value={formData.email} onChange={handleChange} placeholder='Email' variant='standard' required />
+          
+          {/* <TextField type="email" id="email" value={formData.email} onChange={handleChange} label="Email" variant='standard' required /> */}
         </div>
+        <br/>
         <div>
           <label>Password</label>
           <input type="password" id="password" value={formData.password} onChange={handleChange} placeholder='Password' required />
         </div>
-        <button type="submit" className="button">Login</button><br/>
+        <br/>
+        <button type="submit" className="button-64" style={{fontWeight:"bolder"}}>Login</button><br/>
     
         
       </form>

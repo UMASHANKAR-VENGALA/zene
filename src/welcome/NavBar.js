@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import React from 'react'
 import {  Link, Route, Routes } from 'react-router-dom';
 import logo from "./LOGO.png"
@@ -22,7 +23,7 @@ export default function NavBar() {
                      </Link>
                   <div className="navbar__links">
                      <Link to='/signin'>
-                     <button class="button-64" role="button"><span class="text">Sign IN</span></button>
+                     <button class="button-64" role="button"><span class="text">Sign In</span></button>
                      </Link>
                      <Link to='/register'>
                      <button class="button-64" role="button"><span class="text">Register</span></button>
