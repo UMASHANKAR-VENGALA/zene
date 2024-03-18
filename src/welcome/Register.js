@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import "./SignIn.css"
+import NavBar from './NavBar';
 
 export default function Register()
 {
@@ -49,6 +50,7 @@ export default function Register()
   
   return (
     <div >
+      <NavBar/>
       
       {
         message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
@@ -69,6 +71,7 @@ export default function Register()
           <label>Password</label>
           <input type="password" id="password" value={formData.password} onChange={handleChange} placeholder='Password' required />
         </div>
+        
         
         <button type="submit">Register</button>
       </form>

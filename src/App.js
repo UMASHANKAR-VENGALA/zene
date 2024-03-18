@@ -1,13 +1,14 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
-import Sidebar from './user/UserSidebar';
-import AdminSidebar from './admin/AdminSidebar'
-import Dashboard from './user/Dashboard';
-import Trending from './user/Trending';
-import Player from './user/Player';
-import Favourites from './user/Favourites';
-import Library from './user/Library';
-import NavBar from './welcome/NavBar';
+// import Sidebar from './user/UserSidebar';
+// import AdminSidebar from './admin/AdminSidebar'
+// import Dashboard from './user/Dashboard';
+// import Trending from './user/Trending';
+// import Player from './user/Player';
+// import Favourites from './user/Favourites';
+// import Library from './user/Library';
+// import NavBar from './welcome/NavBar';
+import ZeneRoutes from './ZeneRoutes';
 
 function App() {
     return (
@@ -15,7 +16,10 @@ function App() {
 
             <BrowserRouter>
 
-                <NavBar />
+                {/* <NavBar /> */}
+
+
+                <ZeneRoutes/>
 
 
                 {/* <Sidebar >

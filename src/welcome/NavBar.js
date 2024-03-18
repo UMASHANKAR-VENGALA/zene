@@ -16,7 +16,7 @@ export default function NavBar() {
     <div>
          
                 <nav className="navbar">
-                     <Link to=''>
+                     <Link to='/'>
                       <div className="navbar__logo">
                       <img src={logo} alt="Logo" />
                       </div>
@@ -35,13 +35,13 @@ export default function NavBar() {
                   
                 </nav>
         
-            <Routes>
+            {/* <Routes>
                 <Route path='/' element={<Home/>} />
                 <Route path='/signin' element={<SignIn/>} />
                 <Route path='/register' element={<Register/>}/>
                 <Route path='/dashboard' element={<DashBoard/>}/>
                 <Route path='/adminlogin' element={<AdminLogin/>}/>
-            </Routes>
+            </Routes> */}
         
         
     </div>

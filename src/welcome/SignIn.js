@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import TextField from '@mui/material/TextField';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import "./SignIn.css"
+import NavBar from './NavBar';
 
 
 export default function SignIn() 
@@ -29,7 +29,8 @@ export default function SignIn()
       if (response.data!=null) 
       {
               console.log(response.data)
-              navigate("/dashboard");        
+              // navigate("/dashboard");    
+              window.location.href = "UserSidebar"    
       } 
       else 
       {
@@ -46,6 +47,8 @@ export default function SignIn()
 
   return (
     <div>
+
+      <NavBar />
       
       
       {

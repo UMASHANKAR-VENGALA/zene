@@ -1,12 +1,12 @@
 import React from 'react'
-import Sidebar from './UserSidebar'
+import AdminSidebar from './AdminSidebar'
 
 export default function Favourites() {
   return (
     <div>
-        <Sidebar>
+        <AdminSidebar>
         <h2>My Favourites</h2>
-    </Sidebar>
+    </AdminSidebar>
     </div>
   )
 }

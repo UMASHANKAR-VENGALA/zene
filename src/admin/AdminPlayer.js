@@ -1,12 +1,12 @@
 import React from 'react'
-import Sidebar from './UserSidebar'
+import AdminSidebar from './AdminSidebar'
 
 export default function Player() {
   return (
     <div>
-      <Sidebar>
+      <AdminSidebar>
            <h1 align="center">Music Player</h1>
-      </Sidebar>
+      </AdminSidebar>
     </div>
   )
 }

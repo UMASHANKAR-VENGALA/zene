@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+import NavBar from '../welcome/NavBar';
+
 
 export default function AdminLogin() 
 {
@@ -26,7 +28,8 @@ export default function AdminLogin()
       const response = await axios.post('http://localhost:2032/checkadminlogin', formData);
       if (response.data!=null) 
       {
-        navigate("/adminhome")
+        // navigate("/adminhome")
+        window.location.href = "AdminSidebar"  
       } 
       else 
       {
@@ -43,7 +46,7 @@ export default function AdminLogin()
 
   return (
     <div>
-      
+      <NavBar />
       {
         message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
       }

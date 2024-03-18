@@ -15,27 +15,27 @@ export default function Sidebar({children}) {
 
     const menuItem = [
         {
-            path:"/dashboard",
+            path:"/admindashboard",
             name:"Dashboard",
             icon:<MdDashboard />
         },
         {
-            path:"/trending",
+            path:"/admintrending",
             name:"Trending",
             icon:<BsFire />
         },
         {
-            path:"/player",
+            path:"/adminplayer",
             name:"Player",
             icon:<BsFillMusicPlayerFill />
         },
         {
-            path:"/favourites",
+            path:"/adminfavourites",
             name:"Favourites",
             icon:<TbMusicHeart />
         },
         {
-            path:"/library",
+            path:"/adminlibrary",
             name:"Library",
             icon:<MdLibraryMusic />
         },

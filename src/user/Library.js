@@ -1,9 +1,12 @@
 import React from 'react'
+import Sidebar from './UserSidebar'
 
 export default function Library() {
   return (
     <div>
-      <h1 align="center">Library Page</h1>
+      <Sidebar>
+        <h1 align="center">Library Page</h1>
+      </Sidebar>
     </div>
   )
 }
