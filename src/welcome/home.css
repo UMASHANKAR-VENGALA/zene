@@ -27,17 +27,26 @@
     padding: 50px;
     height: 100vh;
     /* background-color: rgb(57, 57, 57); */
-    background-image: linear-gradient(to right, rgb(223, 92, 252) , rgb(105, 234, 251));
-    
+    background-image: url("homebgnew.jpg");
+    /* linear-gradient(to right, rgb(223, 92, 252) , rgb(105, 234, 251)); */
+    background-size:cover; 
+    background-repeat: no-repeat; 
+    background-position:top;
  }
   
   .body h1 {
     font-size: 36px;
+    color:white;
+    margin-top: 0;
+  }
+  .body h2{
+    color:seashell;
   }
   
   .body p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: white;
   }
   
   .get-started-button {

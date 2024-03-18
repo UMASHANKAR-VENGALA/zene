@@ -12,8 +12,8 @@ function Home() {
 
       <div className="body">
         <h1>Welcome to Our Music Streaming Platform!</h1>
-        <br/><br/>
-        <h3>Listen to your favorite music anytime, anywhere.</h3>
+        <br/>
+        <h2>Let the rhythm guide your soul..</h2>
         
        
 

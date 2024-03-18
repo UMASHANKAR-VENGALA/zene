@@ -4,21 +4,25 @@ form {
   width: 300px;
   text-align: center; 
   border: 2px solid white;
-  box-shadow: 5px 5px 5px lightblue;
+  box-shadow: 5px 5px 5px plum;
   padding: 28px;
   margin-top: 80px;
   margin: 50%vw;
   border-radius: 12px;
   color: #FFFFFF;
-  /* background-image: linear-gradient(to right,rgb(105, 234, 251),rgb(223, 92, 252)); */
+  overflow: hidden; /* Ensures the blur effect doesn't spill out of the container */
+  backdrop-filter: blur(10px);  /* background-image: linear-gradient(to right,rgb(105, 234, 251),rgb(223, 92, 252)); */
 }
 body {
   text-align: center;
   /* padding: 50px; */
   height: 100vh;
   /* background-color: rgb(57, 57, 57); */
-  background-image: linear-gradient(to right, rgb(223, 92, 252) , rgb(105, 234, 251));
-  
+  background-image: url("homebgnew.jpg");
+  /* linear-gradient(to right, rgb(223, 92, 252) , rgb(105, 234, 251)); */
+  background-size:cover; 
+  background-repeat: no-repeat; 
+  background-position:top;
 }
 
 
