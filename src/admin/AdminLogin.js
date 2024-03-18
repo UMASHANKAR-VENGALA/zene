@@ -63,7 +63,7 @@ export default function AdminLogin()
           <label>Password</label>
           <input type="password" name="password" value={formData.password} onChange={handleChange}placeholder='password' required />
         </div>
-        <button type="submit" className="button">Login</button>
+        <button type="submit" className="button-64" style={{fontWeight:"bolder"}}>Login</button>
       </form>
     </div>
   );

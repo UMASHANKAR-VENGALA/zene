@@ -73,7 +73,7 @@ export default function Register()
         </div>
         
         
-        <button type="submit">Register</button>
+        <button type="submit" className="button-64" style={{fontWeight:"bolder"}}>Register</button>
       </form>
     </div>
   );
