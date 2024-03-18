@@ -6,7 +6,7 @@ table{
 #users {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 100vw;
   }
   
   #users td, #users th {
