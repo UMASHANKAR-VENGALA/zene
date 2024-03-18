@@ -47,12 +47,14 @@ export default function AdminLogin()
   return (
     <div>
       <NavBar />
+      
+      <form onSubmit={handleSubmit}>
+      <h3 align="center" style={{fontFamily:"cursive",fontSize:"40px"}}><u>Admin Login</u></h3>
+      <br/>
       {
         message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
       }
-      <form onSubmit={handleSubmit}>
-      <h3 align="center" style={{fontFamily:"cursive",fontSize:"40px"}}><u>Admin Login</u></h3>
-      <br/><br/>
+      <br/>
         <div>
           <label>Username</label>
           <input type="text" name="username" value={formData.username} onChange={handleChange} placeholder='username' required />

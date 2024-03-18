@@ -51,13 +51,14 @@ export default function SignIn()
       <NavBar />
       
       
-      {
-        message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
-      }
       <form onSubmit={handleSubmit}>
 
       <h2 align="center" style={{fontFamily:"cursive",fontSize:"40px"}}><u>Sign In</u></h2>
-      <br/><br/>
+      <br/>
+      {
+        message ? <h4 align="center" style={{color:"red"}}>{message}</h4> : <h4 align="center" style={{color:"red"}}>{error}</h4>
+      }
+      <br/>
         <div>
           <label>Email</label>
           <input type="email" id="email" value={formData.email} onChange={handleChange} placeholder='Email' variant='standard' required />

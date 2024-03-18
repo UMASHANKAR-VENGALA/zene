@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Sidebar from './AdminSidebar';
+import './viewusers.css'
 
 export default function ViewUsers() {
   const [users, setUsers] = useState([]);
@@ -33,7 +34,7 @@ export default function ViewUsers() {
       <h1 style={{ textAlign: 'center' }}>Users</h1>
       <hr/>
       
-      <table border={1} align="center" style={{ width: 'auto', height: 'auto' }}>
+      <table id="users" border={1} align="center" style={{ width: 'auto', height: 'auto' }}>
           <thead>
             <tr>
               <th>Full Name</th>

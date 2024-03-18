@@ -51,14 +51,14 @@ export default function Register()
   return (
     <div >
       <NavBar/>
-      
-      {
-        message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
-      }
 
       <form onSubmit={handleSubmit}>
       <h3 align="center" style={{fontFamily:"cursive",fontSize:"40px"}}><u>Register</u></h3>
-      <br/><br/>
+      <br/>
+      {
+        message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
+      }
+      <br/>
         <div>
           <label>Full Name</label>
           <input type="text" id="fullname" value={formData.fullname} onChange={handleChange} placeholder='Fullname' required />
