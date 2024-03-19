@@ -1,6 +1,6 @@
 import { MdDashboard, MdLibraryMusic } from 'react-icons/md'
 import { BsFire, BsFillMusicPlayerFill } from "react-icons/bs";
-import { TbMusicHeart } from "react-icons/tb";
+import { TbMusicHeart, TbLogout2 } from "react-icons/tb";
 import { FaBars,FaUserAlt } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
@@ -43,6 +43,11 @@ export default function Sidebar({children}) {
             path:"/viewusers",
             name:"View Users",
             icon:<FaUserAlt />
+        },
+        {
+            path:"/logout",
+            name:"Logout",
+            icon:<TbLogout2/>
         }
     ]
 
@@ -70,4 +75,8 @@ export default function Sidebar({children}) {
         <main>{children}</main>
     </div>
   )
+
+
 }
+
+

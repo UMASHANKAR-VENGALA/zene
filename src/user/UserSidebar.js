@@ -1,6 +1,6 @@
 import { MdDashboard, MdLibraryMusic } from 'react-icons/md'
 import { BsFire, BsFillMusicPlayerFill } from "react-icons/bs";
-import { TbMusicHeart } from "react-icons/tb";
+import { TbMusicHeart,TbLogout2 } from "react-icons/tb";
 import { FaBars } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
@@ -39,6 +39,11 @@ export default function Sidebar({children}) {
             name:"Library",
             icon:<MdLibraryMusic />
         },
+        {
+            path:"/logout",
+            name:"Logout",
+            icon:<TbLogout2/>
+        }
     ]
 
   return (

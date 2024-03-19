@@ -34,7 +34,7 @@ export default function ViewUsers() {
       <h1 style={{ textAlign: 'center' }}>Users</h1>
       <hr/>
       
-      <table id="users" border={1} align="center" style={{ width: 'auto', height: 'auto' }}>
+      <table id="users" border={1} >
           <thead>
             <tr>
               <th>Full Name</th>
@@ -49,7 +49,7 @@ export default function ViewUsers() {
         <td>{user.fullname}</td>
         <td>{user.email}</td>
         <td>
-          <button onClick={() => deleteUser(user.email)} className='button'>Delete</button>
+          <button  onClick={() => deleteUser(user.email)} className='deletebutton'>Delete</button>
         </td>
       </tr>
     ))

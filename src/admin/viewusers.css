@@ -1,4 +1,4 @@
-
+/* 
 table{
     align:center;
 }
@@ -6,7 +6,6 @@ table{
 #users {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100vw;
   }
   
   #users td, #users th {
@@ -26,4 +25,53 @@ table{
     text-align: left;
     background-color: #04AA6D;
     color: white;
+  } */
+
+
+  table {
+    border-collapse:collapse;
+    width: 95%;
+    margin-top: 5%;
+    padding: 10px;
   }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+    color: black;
+  }
+  
+  tr:nth-child(odd){background-color: #a0a09d}
+  tr:nth-child(even){background-color: #747474cc}
+  
+  th {
+    background-color: #000000;
+    color: white;
+  }
+
+
+.deletebutton {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 20px;
+  vertical-align: middle;
+  border: 1px solid;
+  border-radius: 6px;
+  color: #000000;
+  background-color: #95ff00a0;
+  border-color: #1b1f2326;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
+  
+}
+
+.deletebutton:hover {
+  background-color: #ff5500da;
+  border-color: #231b1b26;
+  transition-duration: 0.1s;
+}

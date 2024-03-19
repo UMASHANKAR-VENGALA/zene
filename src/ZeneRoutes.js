@@ -36,15 +36,16 @@ export default function ZeneRoutes() {
                 <Route path="/favourites" element={<Favourites/>} />
                 <Route path="/library" element={<Library/>} />
 
-                <Route path='UserSidebar' element={<UserSidebar/>}/>
-                <Route path='AdminSidebar' element={<AdminSidebar/>}/>
+                <Route path='/UserSidebar' element={<UserSidebar/>}/>
+                <Route path='/AdminSidebar' element={<AdminSidebar/>}/>
                 <Route path="/admindashboard" element={<AdminDashBoard/>} />
                 <Route path="/admintrending" element={<AdminTrending/>} />
                 <Route path="/adminplayer" element={<AdminPlayer/>} />
                 <Route path="/adminfavourites" element={<AdminFavourites/>} />
                 <Route path="/adminlibrary" element={<AdminLibrary/>} />
 
-                <Route path='viewusers' element={<ViewUsers/>}/>
+                <Route path='/viewusers' element={<ViewUsers/>}/>
+                <Route path="/logout" element={<Home/>} />
 
 
             </Routes>
