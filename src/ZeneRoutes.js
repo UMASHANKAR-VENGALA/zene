@@ -17,6 +17,7 @@ import AdminFavourites from './admin/AdminFavourites'
 import AdminLibrary from './admin/AdminLibrary'
 import AdminSidebar from './admin/AdminSidebar'
 import ViewUsers from './admin/ViewUsers'
+import PageNotFound from './welcome/PageNotFound.'
 
 export default function ZeneRoutes() {
   return (
@@ -47,6 +48,8 @@ export default function ZeneRoutes() {
                 <Route path='/viewusers' element={<ViewUsers/>}/>
                 <Route path="/logout" element={<Home/>} />
 
+                <Route path="*" element={<PageNotFound/>} />
+                
 
             </Routes>
 

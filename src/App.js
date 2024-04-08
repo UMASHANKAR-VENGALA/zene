@@ -8,7 +8,7 @@ function App() {
 
             <BrowserRouter>
 
-                <ZeneRoutes/>
+                    <ZeneRoutes/>
 
             </BrowserRouter>
 
