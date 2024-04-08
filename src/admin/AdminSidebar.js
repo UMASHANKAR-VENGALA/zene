@@ -2,8 +2,8 @@ import { MdDashboard, MdLibraryMusic } from 'react-icons/md'
 import { BsFire, BsFillMusicPlayerFill } from "react-icons/bs";
 import { TbMusicHeart, TbLogout2 } from "react-icons/tb";
 import { FaBars,FaUserAlt } from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { Routes, Route, NavLink } from 'react-router-dom';
+import {  useState } from 'react';
 
 
 export default function Sidebar({children}) {
@@ -73,6 +73,21 @@ export default function Sidebar({children}) {
             }
         </div>
         <main>{children}</main>
+
+        {/* <Routes>
+                <Route path='/UserSidebar' element={<UserSidebar/>}/>
+                <Route path='/AdminSidebar' element={<AdminSidebar/>}/>
+                <Route path="/admindashboard" element={<AdminDashBoard/>} />
+                <Route path="/admintrending" element={<AdminTrending/>} />
+                <Route path="/adminplayer" element={<AdminPlayer/>} />
+                <Route path="/adminfavourites" element={<AdminFavourites/>} />
+                <Route path="/adminlibrary" element={<AdminLibrary/>} />
+
+                <Route path='/viewusers' element={<ViewUsers/>}/>
+                <Route path="/logout" element={<Home/>} />
+        </Routes> */}
+
+
     </div>
   )
 

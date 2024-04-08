@@ -11,7 +11,7 @@ form {
   margin: 50%vw;
   border-radius: 12px;
   color: #FFFFFF;
-  overflow: hidden; /* Ensures the blur effect doesn't spill out of the container */
+  overflow: hidden;
   backdrop-filter: blur(10px);  /* background-image: linear-gradient(to right,rgb(105, 234, 251),rgb(223, 92, 252)); */
 }
 body {
